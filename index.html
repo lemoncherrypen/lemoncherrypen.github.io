@@ -11,16 +11,17 @@
 </head>
 
 <body>
+    <a name="work"></a>
     <div class="wrapper">
         <div class="banner">
             <img src="assets/css/images/banner.png">
         </div>
         <div class="navigation">
             <ul>
-                <li class="nav-link">Work</li>&nbsp;&nbsp;/&nbsp;
-                <li class="nav-link">Commissions</li>&nbsp;&nbsp;/&nbsp;
+                <li class="nav-link"><a href="#work">Work</a></li>&nbsp;&nbsp;/&nbsp;
+                <li class="nav-link"><a href="#commissions">Commissions</a></li>&nbsp;&nbsp;/&nbsp;
                 <li class="nav-link"><a href="https://www.etsy.com/shop/lemoncherrypen" target="_blank">Etsy</a></li>&nbsp;&nbsp;/&nbsp;
-                <li class="nav-link">Contact Me</li>
+                <li class="nav-link"><a href="#contact">Contact Me</a></li>
             </ul>
         </div> <!-- end navigation -->
         <div class="gallery content">
@@ -70,6 +71,7 @@
                     </div>
                 </div>
             </div>
+            <a name="commissions"></a>
         </div> <!-- end gallery -->
         <div class="heading rosy-bg">
             <h2>Commissions</h2>
@@ -103,7 +105,7 @@
                 </div>
             </div>
             <h3>Pricing</h3>
-            <div class="row">
+            <div class="row pricing-row">
                 <div class="column commission-img">
                     <h4>Headshot</h4>
                     <div class="img-container">
@@ -258,40 +260,56 @@
                     </table>
                 </div> <!-- end prices column -->
             </div> <!-- end row -->
-            <p>For more details about things like payment methods and what kinds of commissions I accept, please see the terms page.</p>
+            <p>For more details about things like payment methods and what kinds of commissions I accept, please see the <a href="terms.html" id="terms-link">terms page</a>.</p>
         </div> <!-- end commission-info section -->
+        <a name="contact"></a>
         <div class="heading rosy-bg">
             <h2>Contact Me</h2>
         </div>
         <div class="socials-info">
-            <div class="row">
-                <div class="column">
+            <div class="row icons-row">
+                <div class="column icons">
                     <div class="icon">
-                        <img src="assets/css/images/socials/instagram.png">
-                    </div>
-                    <div class="icon">
-                        <img src="assets/css/images/socials/twitter.png">
-                    </div>
-                    <div class="icon">
-                        <img src="assets/css/images/socials/twitch.png">
+                        <a href="https://www.instagram.com/lemoncherrypen/" target="_blank">
+                            <img src="assets/css/images/socials/instagram.png">
+                        </a>
                     </div>
                 </div>
-                <div class="column">
-                    <form
-                        action="https://formspree.io/f/xgedwyao"
-                        method="POST"
-                        enctype="multipart/form-data"
-                        >
-                        <label>
-                            Your email:
-                            <input type="email" name="_replyto">
-                        </label>
-                        <label>
-                            Your message:
-                            <textarea name="message"></textarea>
-                          </label>
-                        <button type="submit">Send</button>
-                    </form>
+                <div class="column icons">
+                    <div class="icon">
+                        <a href="https://twitter.com/lemoncherrypen" target="_blank">
+                            <img src="assets/css/images/socials/twitter.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="column icons">
+                    <div class="icon">
+                        <a href="https://www.twitch.tv/lemoncherrypen/" target="_blank">
+                            <img src="assets/css/images/socials/twitch.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <br/>
+            <div class="row">
+                <div class="column contact-form">
+                    <div class="form-container">
+                        <form
+                            action="https://formspree.io/f/xgedwyao"
+                            method="POST"
+                            enctype="multipart/form-data"
+                            >
+                            <label>
+                                <span class="prompt">Your Email:</span><br/>
+                                <input type="email" name="_replyto">
+                            </label><br/>
+                            <label>
+                                <span class="prompt">Your Message:</span><br/>
+                                <textarea name="message"></textarea>
+                            </label><br/>
+                            <button class="submit-email" type="submit">Send Email</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>

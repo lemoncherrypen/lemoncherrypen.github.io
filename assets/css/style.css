@@ -8,7 +8,19 @@
     box-sizing: border-box;
 }
 
+html{scroll-behavior: smooth;}
+
 /* navigation ---------------------------------------------------*/
+
+.fixed{
+    position: fixed;
+    display: inline-block;
+    top: 0;
+}
+
+.static{
+    position: static;
+}
 
 .navigation{
     width: 100%;
@@ -17,15 +29,17 @@
     padding: 40px 0px;
     font-family: 'Lato';
     font-size: 16pt;
+    z-index: 1;
 }
 
 .nav-link{
     display: inline-block;
 	text-decoration: none;
     text-align: center;
-	transition: ease .6s;
-     -webkit-transition: ease .6s;
-     cursor: pointer;
+    -webkit-transition: ease .6s;
+    cursor: pointer;
+    transition: ease .6s;
+    -webkit-transition: ease .6s;
 }
 
 .navigation a {
@@ -47,7 +61,6 @@
 /* end navigation -----------------------------------------------*/
 
 body{
-    background-color: gray;
     font-family: 'Lato';
 }
 
@@ -130,6 +143,11 @@ h4 {
 
 .levels-of-finish { /* the row with images showing levels of finish */
     margin-bottom: 80px;
+    justify-content: center;
+}
+
+.levels-of-finish .img-container{
+    text-align: center;
 }
 
 .commission-info p {
@@ -139,7 +157,7 @@ h4 {
 
 .commission-info {
     padding: 20px 10px;
-    background-color: #ebcfba;
+    background-color: #f5e2d4;
 }
 
 .commission-info .column-small {
@@ -226,20 +244,93 @@ th {
     font-size: 17pt;
 }
 
+.accordion {
+    background-color: #f0c7bd;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    border: none;
+    transition: ease 0.7s;
+    -webkit-transition: ease 0.7s;
+    font-size: 14pt;
+  }
+
+  .accordion:after {
+    content: '\002B';
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+ 
+  .active, .accordion:hover {
+    background-color: #f6a597;
+  }
+  
+  .panel {
+    padding: 18px;
+    background-color: #fdf8f5;
+    display: none;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+
+#terms-link {
+    color: #be8c7f;
+    cursor: pointer;
+    transition: ease .6s;
+    -webkit-transition: ease .6s;
+}
+
+#terms-link:visited {
+    color: black;
+}
+
+#terms-link:hover {
+    color: #e6ac9e;
+}
+
+.terms-section {
+    background-color: #f5ece6;
+    padding: 40px 10px;
+}
+
+.terms p {
+    line-height: 1.5;
+}
+
+.terms-ul {
+    padding-left: 40px;
+    line-height: 1.5;
+}
+
+.faq-container {
+    padding-left: 40px;
+}
+
 .socials-info {
     background-color: #f5ece6;
     height: 80vh;
     padding: 60px 0px;
 }
 
-.socials-info .column {
-    width: 33%;
+.icons-row {
+    margin-bottom: 10px;
+    justify-content: center;
+}
+
+.icons{
     text-align: center;
+    max-width: 10%;
 }
 
 .icon {
     overflow: hidden;
-    width: 50%;
     vertical-align: middle;
     text-align: center;
     display: inline-block;
@@ -255,6 +346,63 @@ th {
 .icon img:hover{
     animation: shake .6s;
     animation-iteration-count: 1;
+}
+
+.contact-form {
+    width: 100%;
+}
+
+.form-container {
+    text-align: center;
+    
+}
+
+form {
+    font-size: 14pt;
+    display: inline-block;
+    width: 60%;
+    text-align: left;
+}
+
+.prompt {
+    display: inline-block;
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+
+input, textarea {
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    width: 50%;
+    padding: 8px;
+    width: 100%;
+}
+
+textarea {
+    height: 100px;
+}
+
+input {
+    height: 40px;
+}
+
+.submit-email {
+    background-color: #f6a597;
+    border: none;
+    border-radius: 4px;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 8px 0px 8px 0px;
+    cursor: pointer;
+    transition: ease .6s;
+    -webkit-transition: ease .6s;
+    font-size: 12pt;
+}
+
+.submit-email:hover {
+    background-color: #f1cfc9;
 }
 
 @keyframes shake {
@@ -278,5 +426,12 @@ th {
     }
     .commission-info .img-container, .commission-ex-desc {
         width: 70%;
+    }
+    form{
+        width: 90%;
+    }
+
+    .icons{
+        max-width: 25%;
     }
   }

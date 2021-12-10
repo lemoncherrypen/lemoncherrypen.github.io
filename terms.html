@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script/nav.js"></script>
+    <script src="script/load-gallery.js"></script>
+    <title>Lemon Cherry Pen</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="banner">
+            <img src="assets/css/images/banner.png">
+        </div>
+        <div class="navigation">
+            <ul>
+                <li class="nav-link"><a href="index.html#commissions">Back to Commissions Section</a></li>
+            </ul>
+        </div>
+        <div class="heading rosy-bg">
+            <h2>Terms of Use</h2>
+        </div>
+        <div class="terms-section">
+            <p style="text-align: center;">Commissioning me means that you accept the conditions outlined on this page.</p>
+            <h3>FAQ</h3>
+            <div class="faq-container">
+                <button class="accordion">How do I request a commission?</button>
+                <div class="panel">
+                    <p>
+                        Send me an email at lemoncherrypen@gmail.com with a general idea of what you'd like and any reference pictures you'd like to include.
+                        You can also message me on Instagram @lemoncherrypen. Feel free to message me with general questions or to ask for a quote as well.
+                    </p>
+                </div>
+                <button class="accordion">What are complex features?</button>
+                <div class="panel">
+                    <p>
+                        Examples of complex features are detailed tattoos, props, detailed/multiple accessories, mecha.
+                        Complex features will add $1-2 to the base price of a commission.
+                    </p>
+                </div>
+                <button class="accordion">What is a complex background?</button>
+                <div class="panel">
+                    <p>
+                        The price for a complex background will usually be $3 added to the base price of the artwork. Examples of $3 backgrounds: cities, forests, bedrooms, basically anything a step up from solid color and simple pattern backgrounds.
+                        Prices may vary when backgrounds are densely packed and extremely detailed, or where a character is not the focus of the artwork.
+                    </p>
+                </div>
+                <button class="accordion">Are there things you won't draw?</button>
+                <div class="panel">
+                    <p>
+                        Yes, sometimes there are things I won't draw. <br/>
+                        &#10004 I <strong>will</strong> draw NSFW, gore, furry characters, and mecha.<br/>
+                        &#10008 I <strong>won't</strong> draw:
+                        <ul class="terms-ul">
+                            <li>NSFW of characters under 18 years old</li>
+                            <li>NSFW of characters who are usually depicted as under 18 years old, but are aged up</li>
+                            <li>NSFW of celebrities or other real people who could be recognized</li>
+                            <li>The action of self harming (this is different than characters who just have scars)</li>
+                            <li>Abuse of others, abuse of animals</li>
+                            <li>Things that are discriminatory/hateful</li>
+                        </ul>
+                        If you have a request but are not sure if I will draw it, feel free to send me a message on social media,
+                        or email me at lemoncherrypen@gmail.com. Please respect that I have the right to deny any commission request for any reason.
+                    </p>
+                </div>
+                <button class="accordion">Can I have a printed copy of the commission sent to me?</button>
+                <div class="panel">
+                    <p>
+                        These commissions are digital. If you would like to purchase it as a physical copy, we can discuss an extra charge to help with the
+                        cost of supplies, packaging, and shipping.
+                    </p>
+                </div>
+                <button class="accordion">How do you take payment?</button>
+                <div class="panel">
+                    <p>
+                        You can pay with Paypal or Venmo. Once we agree on what your commission will look like, I will need at least a partial payment upfront
+                        in order to get started. You may either pay 50% upfront and the rest upon completion, or pay full price upfront. Either way, I will send you
+                        at least one progress shot for your approval and a chance to suggest changes once I complete it. I can make minor changes to the final product up to three times for free.
+                        After that, additional changes will cost $1.
+                    </p>
+                </div>
+            </div>
+            <h3>General Disclaimers</h3>
+            <ul class="terms-ul">
+                <li>You may not reproduce/sell the artwork.</li>
+                <li>These are digital commissions. If you would like them printed and sent to you, we can potentially discuss how to do so with an extra charge.</li>
+                <li>I have the right to deny any commission request for any reason.</li>
+                <li>I do not issue refunds unless I am unable to complete the commission.</li>
+                <li>I will not begin working on the commission until I receive at least 50% payment upfront.</li>
+                <li>I will not send the completed commission to you until I receive the rest of the payment due.</li>
+                <li>You may ask for minor changes to be made to the final product up to three times. After that, each change will cost $1.</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            /* Toggle between adding and removing the "active" class,
+            to highlight the button that controls the panel */
+            this.classList.toggle("active");
+
+            /* Toggle between hiding and showing the active panel */
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+            panel.style.display = "none";
+            } else {
+            panel.style.display = "block";
+            }
+        });
+        }
+    </script>
+</body>
+</html>

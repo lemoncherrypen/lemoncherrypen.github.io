@@ -1,11 +1,13 @@
-/*$(document).ready(function(){
+$(document).ready(function(){
     $(window).scroll(function(){
         console.log( $(this).scrollTop() );
         if ($(window).scrollTop() >= 344){
-            $(".navigation").css("position", "fixed").css('top', '0px');
+            $(".navigation").removeClass("static");
+            $(".navigation").addClass("fixed");
         }
-        else {
-            $(".navigation").css("position", "auto");
+        else if ($(window).scrollTop() < 200){
+            $(".navigation").addClass("fixed");
+            $(".navigation").addClass("static");
         }
     });
-});*/
+});
