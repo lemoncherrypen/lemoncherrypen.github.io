@@ -304,7 +304,7 @@ th {
     line-height: 1.5;
 }
 
-.terms-ul {
+.terms-ul, ol {
     padding-left: 40px;
     line-height: 1.5;
 }
