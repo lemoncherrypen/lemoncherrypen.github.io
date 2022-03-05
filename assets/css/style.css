@@ -112,8 +112,16 @@ body{
     transform: scale(1.3);
 }
 
-.rosy-bg{background-color:#be8c7f; color: white;}
-.white-bg{background-color: white; color: #723f31;}
+.rosy-bg{
+    background-color:#be8c7f;
+    color: white;
+    font-size: 3rem;
+}
+
+h2{
+    position: relative;
+    top: 12.5vh;
+}
 
 .heading {
     height: 35vh;
@@ -121,10 +129,15 @@ body{
 
 }
 
-h2 {
-    position: relative;
-    top: 13.5vh;
+.terms-section h2 {
     font-size: 3.5rem;
+    margin: 13vh 0vh;
+    text-align: center;
+}
+
+.short-desc {
+    text-align: center;
+    margin-bottom: 10vh;
 }
 
 h3 {
